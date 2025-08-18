@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em diversos dipositivos ou redmensionando a janela</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.jpg" type="image/jpg">
+        <img src="imagens/foto-g.jpg" alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reprozir áudios em HTML5</p>
+    <audio src="midia/trinkles.mp3" controls autoplay></audio>
+    <p>Outro audio em WAV</p>
+    <audio preload="metadata" controls autoplay>
+        <source src="midia/sm_rr_128_synth_rave_loop_macarena_Fmin.wav" type="audio/wav">
+    </audio>
+</body>
+</html>
