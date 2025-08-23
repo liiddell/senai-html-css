@@ -10,7 +10,7 @@ body {
 
 main{
     background-color: white;
-    padding: 16px;
+    padding: 24px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.082);
     border-radius: 20px;
     width: 600px;
@@ -18,15 +18,27 @@ main{
 }
 
 h1{
+    /* shorthand font-
+    font-style - > font-weight -> font-size -> font-family */
+
     color: darkcyan;
+   font: italic bold 32px 'Segoe UI';
     text-align: center;
-    text-shadow: 1px 1px 0px rgb(5, 46, 46)
+}
+
+h1#secundario {
+    color: rgb(8, 88, 88);
+    font: italic bold 32px 'Segoe UI';
+    text-align: center;
 }
 
 h2{
     color: rgb(34, 141, 91);
+    font-style: italic;
 }
 
 p{
     text-align: justify;
+    text-indent: 30px;
+    letter-spacing: 0.5px;
 }
