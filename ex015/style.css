@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+/* 
+    Em HTML é id   =    em CSS é # (Não pode um elemento)
+    em HTML é class =   em CC é . (Pode vários elementos)
+*/
+
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -34,9 +39,27 @@ h1#secundario {
 
 h2{
     color: rgb(34, 141, 91);
-    font-style: italic;
 }
 
+.basico{
+    color: rgb(5, 116, 64);
+    font-weight: bold;
+    font-style: italic;
+    text-align: right;
+}
+
+.intermediario{
+    color: rgb(25, 5, 116);
+    text-align: center;
+}
+
+.avancado{
+    color: rgb(92, 116, 5);
+}
+
+.destaque{
+    background-color: #e0e04a9d;
+}
 p{
     text-align: justify;
     text-indent: 30px;
