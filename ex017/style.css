@@ -1,0 +1,107 @@
+@charset "UFT-8";
+
+
+body {
+    margin: 0;
+    background-image: url("https://i.pinimg.com/originals/02/3d/81/023d81bed1aada861567d2e68b1cfdb8.jpg");
+    /* background-size: 100px 100px; */
+    padding-top: 70px;
+}
+
+div.corpo {
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+div.quadrado {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 16px;
+    background-color: lightgray;
+    width: 300px;
+    height: 300px;
+
+}
+
+div#q1:hover {
+    background: yellow;
+}
+
+div#q2:hover{
+    background-image: linear-gradient(to bottom, yellow, orange);
+}
+
+div#q1 {
+    background-color: skyblue;
+}
+
+div#q2 {
+    background-image: linear-gradient(to bottom, orange, yellow);
+}
+
+div#q3 {
+    background-image: url("img/Rectangle\ 47.png");
+}
+
+.navbar {
+    position: fixed;     /* fixa no topo */
+  top: 0;              /* gruda no topo */
+  left: 0;
+  width: 100%;         /* ocupa toda a largura */
+  z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 24px 30px;
+    color: #fff;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Menu central */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    color: #1da1f2;
+}
+
+/* Redes sociais */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #1da1f2;
+}

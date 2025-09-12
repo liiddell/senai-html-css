@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 95px;
+}
+
+nav h1{
+    font-size: 40px;
+    font-weight: 700px;
+}
+
+nav ul{
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-direita{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.icons{
+    gap: 16px;
+    display: flex;
+}
+
+.s1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to bottom,#0066CBF2, #C2D6EF00);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 1640px;
+    max-height: 978px;
+    margin: auto;
+}
+
+.s1 .texto{
+    max-width: 30%;
+    color: white;
+
+}
+.s1 h2{
+    font-size: 40px;
+    margin-bottom: 48px;
+}
+
+.s1 p{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.s1 button{
+    width: 300px;
+    height: 60px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.s2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+/* background: linear-gradient(90deg, rgba(254, 165, 0, 0.80) 0%, rgba(254, 165, 0, 0.00) 78.5%); */
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 1640px;
+    max-height: 978px;
+    margin: auto;
+}
+
+.s2 .texto{
+    max-width: 30%;
+    color: #333;
+
+}
+
+.imagem-bike02 {
+  position: relative;
+  max-width: 55%;
+  background: linear-gradient(to right, #ffb84d, #ffffff);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; /* dá respiro entre a borda e a bike */
+}
+
+.imagem-bike02 .legenda {
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #333;
+}

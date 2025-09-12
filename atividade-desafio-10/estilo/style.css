@@ -39,18 +39,22 @@ a.externo::after{
 }
 
 header{
-    background-image: linear-gradient(to bottom, var(--cor03), var(--cor01));
-    min-height: 150px;
-    text-align: center;
-    padding-top: 30px;
+    /* background-image: linear-gradient(to bottom, var(--cor03), var(--cor01)); */
+    /* min-height: 150px; */
+    /* text-align: center; */
+    /* padding-top: 30px; */
+    padding: 10px;
+    border-bottom: 4px solid var(--cor03);
 }
+
 header > h1{
     color: #fff;
     font-family: var(--fonte-destaque);
-    font-size: 3em;
+    font-size: 2em;
     font-weight: normal;
     margin-bottom: 8px;
     letter-spacing: 2px;
+    line-height: 100%;
 }
 
 header > p{
@@ -61,26 +65,42 @@ header > p{
     margin: auto;
 }
 
-nav {
-    background-color: var(--cor01);
-    padding: 10px;
-    margin: auto;
-    text-align: center;
+.container{
+    display: block;
 }
 
-nav > a{
-    color: white;
+.menu-lateral{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    background-color: var(--cor01);
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* margin: auto;
+    text-align: center; */
+}
+
+.menu-lateral  a{
+    color: white;
+    padding: 12px;
     font-weight: bold;
     text-decoration: none;
     transition-duration: 0.5s;
+     border-radius: 8px;
 }
 
-nav>a:hover{
+.menu-lateral a:hover{
     background-color: var(--cor03);
     color: #A6BC09;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+    border-radius: 8px;
+}
+
+.conteudo{
+    flex: 1;
+    padding: 20px;
 }
 
 main{
