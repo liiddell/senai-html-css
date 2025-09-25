@@ -6,6 +6,7 @@ body {
     background-image: url("https://i.pinimg.com/originals/02/3d/81/023d81bed1aada861567d2e68b1cfdb8.jpg");
     /* background-size: 100px 100px; */
     padding-top: 70px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 div.corpo {
@@ -44,14 +45,15 @@ div#q2 {
 }
 
 div#q3 {
+    background-position: left top;
     background-image: url("img/Rectangle\ 47.png");
 }
 
 .navbar {
-    position: fixed;     /* fixa no topo */
-  top: 0;              /* gruda no topo */
+position: fixed;     
+  top: 0;            
   left: 0;
-  width: 100%;         /* ocupa toda a largura */
+  width: 100%;         
   z-index: 1000;
 
     display: flex;
@@ -62,7 +64,7 @@ div#q3 {
     color: #fff;
 }
 
-/* Logo */
+
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -70,7 +72,7 @@ div#q3 {
     text-decoration: none;
 }
 
-/* Menu central */
+
 .menu {
     list-style: none;
     display: flex;
@@ -90,7 +92,7 @@ div#q3 {
     color: #1da1f2;
 }
 
-/* Redes sociais */
+
 .social-icons {
     display: flex;
     gap: 15px;
