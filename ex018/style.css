@@ -10,12 +10,13 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 main{
     color: aliceblue;
     background-color: rgba(255, 255, 255, 0.164);
-    width: 400px;
+    max-width: 400px;
     padding: 10px;
     margin: auto;
     border: 1px solid rgb(204, 157, 55);

@@ -4,33 +4,50 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Montserrat;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff; /* importante pra cobrir o conteúdo atrás */
+  z-index: 1000; /* garante que fique acima dos outros elementos */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* opcional, dá leve destaque */
+}
+
+body {
+  padding-top: 80px; /* ajuste conforme a altura real do seu header/nav */
+}
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 95px;
+    padding: 16px 90px;
+    flex-wrap: wrap;
 }
 
 nav h1{
-    font-size: 40px;
-    font-weight: 700px;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 nav ul{
-    font-size: 20px;
+    font-size: 1.25rem;
     list-style: none;
+    font-style: normal;
+    font-weight: 500;
     display: flex;
-    gap: 20px;
+    gap: 3rem;
 }
 
 .menu-direita{
     display: flex;
     align-items: center;
-    gap: 100px;
+    gap: 3rem;
 }
 
 a{
@@ -39,82 +56,306 @@ a{
 }
 
 .icons{
-    gap: 16px;
+    gap: 1rem;
     display: flex;
 }
 
 .s1{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     background-image: linear-gradient(to bottom,#0066CBF2, #C2D6EF00);
-    padding: 40px;
+    padding: 2.5rem 1.5rem;
     border-radius: 20px;
-    max-width: 1640px;
-    max-height: 978px;
-    margin: auto;
+    max-width: 1600px;
+    min-width: auto;
+    /* max-height: 978px; */
+    margin: 2.5rem auto;
+    gap: 2rem;
 }
 
 .s1 .texto{
-    max-width: 30%;
+    max-width: 450px;
     color: white;
-
+    /* margin: auto; */
 }
 .s1 h2{
-    font-size: 40px;
-    margin-bottom: 48px;
+    font-size: 2.5rem;
+    margin-bottom: 2.rem;
 }
 
 .s1 p{
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.5;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 .s1 button{
-    width: 300px;
+    display: block;
+    width: 100%;
+    max-width: 400px;
     height: 60px;
     background-color: #333;
     color: white;
     border: none;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
+    cursor: pointer;
 }
 
-.s2{
+.imagem-bike01{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-/* background: linear-gradient(90deg, rgba(254, 165, 0, 0.80) 0%, rgba(254, 165, 0, 0.00) 78.5%); */
-    padding: 40px;
-    border-radius: 20px;
-    max-width: 1640px;
-    max-height: 978px;
-    margin: auto;
+    min-width: 300px;
 }
 
-.s2 .texto{
-    max-width: 30%;
-    color: #333;
+.imagem-bike01 img {
+  width: 100%;
+  max-width: fit-content;
+  height: auto;
+  display: block;
+}
 
+.s2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 1.5rem;
+  border-radius: 20px;
+  max-width: 1600px;
+  margin: 2.5rem auto;
+  position: relative;
+  gap: 2rem;
 }
 
 .imagem-bike02 {
-  position: relative;
-  max-width: 55%;
-  background: linear-gradient(to right, #ffb84d, #ffffff);
-  border-radius: 20px;
+flex-basis: 600px;
+flex-grow: 1;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px; /* dá respiro entre a borda e a bike */
+  width: 60%;
+  flex-direction: column-reverse;
+  position: relative;
+}
+
+.imagem-bike02 img {
+  z-index: 1;
+  display: flex;
+  max-width: fit-content;
+  height: auto;
+  display: block;
+}
+
+.gradient-amarelo {
+ position: absolute;
+    /* Usa unidades relativas (vw e % do contêiner) */
+    width: 80vw;
+    height: 100%;
+    max-width: 1080px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, rgba(254, 165, 0, 0.80) 0%, rgba(254, 165, 0, 0.00) 78.5%);
+    /* Alinha o gradiente no canto superior esquerdo do .s2 */
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.s2 .texto{
+    flex-basis: 350px; 
+    flex-grow: 1;
+    color: #333;
+}
+
+.s2 h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.s2 p{
+    font-size: 1.25rem;
+font-style: normal;
+font-weight: 600;
+margin-bottom: 1rem;
 }
 
 .imagem-bike02 .legenda {
   display: block;
   text-align: right;
-  margin-top: 10px;
+  margin-top: 1rem;
   font-size: 0.9rem;
   color: #333;
+}
+
+.s3{
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem 1rem;
+    
+}
+
+/* .container-bike{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    
+} */
+
+.container-bike {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1rem;
+    width: 100%;
+    max-width: 1600px
+}
+
+.bike-feed{
+    border-radius: 30px;
+    background: #E1EEFF;
+    padding: 10px 32px;
+    /* width: 500px; */
+    height: 400px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.bike-feed img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.texto-bikes {
+    align-self: stretch;
+    text-align: center;
+
+}
+
+.texto-bikes h3{
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+
+.texto-bikes h4{
+    color: #F36;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: 130%; /* 46.8px */
+}
+
+.texto-bikes h5{
+color: #333;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%;
+
+}
+
+.texto-bikes h6{
+    color: #0066CB;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.footer {
+  background-color: #0066CB;
+  color: white;
+  padding: 60px 140px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Header aparecendo */
+header {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: 1.0s ease;
+}
+header.aparecer {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.texto, .imagem-bike01, .imagem-bike02, .bike-feed {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.visivel{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+@keyframes pulsar {
+  0% { transform: scale(1); box-shadow: 0 0 0 rgba(0,0,0,0); }
+  50% { transform: scale(1.05); box-shadow: 0 0 15px rgba(255, 200, 0, 0.5); }
+  100% { transform: scale(1); box-shadow: 0 0 0 rgba(0,0,0,0); }
+}
+
+button.pulse {
+  animation: pulsar 1s infinite;
+}
+
+
+.bike-feed {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.bike-feed:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+@media (max-width: 768px){
+    nav {
+        /* Diminui o padding lateral para telas menores */
+        padding: 16px 1rem; 
+    }
+
+    nav h1 {
+        font-size: 2rem;
+    }
+    
+    .menu-direita {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+
+    nav ul {
+        gap: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .s1 h2, .s2 h2 {
+        font-size: 2rem;
+    }
+
+
+
+
+
 }
